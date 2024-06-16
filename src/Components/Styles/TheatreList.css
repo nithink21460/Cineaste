@@ -1,0 +1,54 @@
+.theatres-list-movie-detail {
+  /* display: flex;
+  align-items: center; */
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.theatres-list-movie-details .theatres-list {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.theatre-list-details {
+  margin: 2rem 4rem;
+  background-color: #9fe2bf;
+  padding: 1rem;
+  border-radius: 1.75rem;
+}
+
+.theatre-list-details .theatre-list-det {
+  margin: 2rem;
+  font-size: 1.75rem;
+}
+
+.theatre-list-details .theatre-list-showtimes {
+  margin: 2rem;
+}
+
+.theatre-list-details .theatre-list-showtimes .showtimes {
+  display: flex;
+  justify-content: left;
+}
+
+.theatre-list-details .theatre-list-showtimes .showtimes .showtime-btn {
+  margin-right: 2rem;
+  font-size: 1.75rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #ff6347; /* Tomato Red */
+  color: white; /* White text color for contrast */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.theatre-list-details .theatre-list-showtimes .showtimes .showtime-btn:hover {
+  background-color: #225244; /* Darker shade of green on hover */
+}
+
+.theatre-list-details .theatre-list-showtimes .showtimes .showtime-btn:active {
+  background-color: #225244a4; /* Darker shade of green on hover */
+}

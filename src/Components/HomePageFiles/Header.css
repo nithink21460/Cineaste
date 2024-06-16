@@ -1,0 +1,141 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  padding: 0px 20px;
+  background-color: #533f5e;
+  overflow: hidden;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.middle input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  width: 12rem;
+}
+
+.middle button {
+  padding: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight:bolder;
+  border-radius: 0.5rem;
+  background-color: coral;
+  color: black;
+  cursor: pointer;
+}
+
+.middle button:hover {
+  background-color: tomato;
+}
+
+.middle button:hover:active {
+  background-color: rgba(255, 99, 71, 0.712);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right .nav-link {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.right .nav-link:hover {
+  text-shadow: 0.1rem 0.1rem coral;
+}
+
+.right .nav-link:active {
+  text-shadow: 0.1rem 0.1rem rgba(255, 127, 80, 0.164);
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.navbar-links {
+  display: none;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .right {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .left,
+  .middle,
+  .right,
+  .navbar-toggle {
+    margin: 0.08rem;
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    display: block;
+    background-color: #333;
+    border: none;
+  }
+
+  .navbar-toggle .navbar-icon {
+    background-color: white;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    background-color: #333;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .navbar-links.active a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+  }
+
+  .navbar-links.active a:hover {
+    background-color: #555;
+  }
+}
